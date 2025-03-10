@@ -1,0 +1,34 @@
+{
+  "name": "first-react-lesson",
+  "version": "1.0.0",
+  "description": "For React JS learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "Just"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AravindSaravananGitHub/React-Learning.git"
+  },
+  "keywords": [
+    "Learning",
+    "React"
+  ],
+  "author": "Aravind S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AravindSaravananGitHub/React-Learning/issues"
+  },
+  "homepage": "https://github.com/AravindSaravananGitHub/React-Learning#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist":[
+    "last 10 versions"
+  ]
+}
