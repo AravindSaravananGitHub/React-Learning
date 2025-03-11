@@ -4,7 +4,9 @@
   "description": "For React JS learning",
   "main": "app.js",
   "scripts": {
-    "test": "Just"
+    "start": "parcel ./src/index.html",
+    "build":"parcel build ./src/index.html",
+    "test": "just"
   },
   "repository": {
     "type": "git",
