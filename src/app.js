@@ -1,21 +1,38 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = <h1>Hello World !!</h1>;
+const Parent = () => {
+  return (
+    <div>
+      <div id="childOne">
+        <h1>Hi from child one react component</h1>
+        <h2>H2 from child one react component</h2>
+      </div>
+      <div id="childTwo">
+        <h1>Hi from child two react component</h1>
+        <h2>H2 from child two react component</h2>
+      </div>
+    </div>
+  );
+};
 
-const components = (
-  <div id="parent">
-    <div id="childOne">
-      <h1>Hi Child One</h1>
-      <h2>Hi Child One</h2>
+const Heading = () => {
+  return (
+    <h1 className="heading" id="head">
+      Hello World in React functional components
+    </h1>
+  );
+};
+
+const Components = () => {
+  return (
+    <div>
+      <Heading />
+      <Parent />
     </div>
-    <div id="childTwo">
-      <h1>Hi Child Two</h1>
-      <h2>Hi Child Two</h2>
-    </div>
-  </div>
-);
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render([heading, components]);
+root.render(<Components />);
